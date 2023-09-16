@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.h1 {
+  margin-bottom: 30px;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  height: 200px;
+  background-color: rgb(222, 42, 99);
+  color: transparent;
+  font-size: 50px;
+  border-radius: 10px;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, transform .3s ease-in-out;
+  cursor: pointer;
+}
+
+.card.open {
+  color: rgb(222, 42, 99);
+  background-color: rgb(241, 237, 183);
+}
+
+.card.success {
+  background-color: rgb(69, 140, 184);
+  color: rgb(255, 255, 255);
+  transform: scale(0.95);
+}
